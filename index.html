@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FileFlow - Smart File Organization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>🌿 FileFlow</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="#dashboard">Dashboard</a>
+                <a href="#settings">Settings</a>
+                <a href="#premium" class="premium-btn">Go Premium</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="upload-section">
+            <div class="upload-container">
+                <div class="upload-zone">
+                    <div class="upload-icon">📁</div>
+                    <h2>Drop your files here</h2>
+                    <p>Or click to browse and upload multiple files</p>
+                    <button class="upload-btn">Choose Files</button>
+                </div>
+                <div class="upload-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">0/20</span>
+                        <span class="stat-label">Files processed (Free)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="dashboard-section">
+            <div class="dashboard-grid">
+                <div class="card file-analysis">
+                    <h3>📊 File Analysis</h3>
+                    <div class="analysis-item">
+                        <span class="file-type">Screenshots</span>
+                        <span class="file-count">12 files</span>
+                    </div>
+                    <div class="analysis-item">
+                        <span class="file-type">Documents</span>
+                        <span class="file-count">8 files</span>
+                    </div>
+                    <div class="analysis-item">
+                        <span class="file-type">Images</span>
+                        <span class="file-count">5 files</span>
+                    </div>
+                </div>
+
+                <div class="card organization-preview">
+                    <h3>🗂️ Smart Organization</h3>
+                    <div class="folder-preview">
+                        <div class="folder-item">
+                            <span class="folder-icon">📁</span>
+                            <span class="folder-name">Jan15_Screenshots</span>
+                        </div>
+                        <div class="folder-item">
+                            <span class="folder-icon">📁</span>
+                            <span class="folder-name">Jan15_Documents</span>
+                        </div>
+                        <div class="folder-item">
+                            <span class="folder-icon">📁</span>
+                            <span class="folder-name">Jan15_Images</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card settings-panel">
+                    <h3>⚙️ Naming Templates</h3>
+                    <div class="template-option">
+                        <input type="radio" name="template" checked>
+                        <label>MonthDay_FileType (Jan15_Screenshots)</label>
+                    </div>
+                    <div class="template-option">
+                        <input type="radio" name="template">
+                        <label>YYYY-MM-DD_FileType (2024-01-15_Screenshots)</label>
+                    </div>
+                    <div class="template-option premium-feature">
+                        <input type="radio" name="template" disabled>
+                        <label>Custom Template 💎 Premium</label>
+                    </div>
+                </div>
+
+                <div class="card recommendations">
+                    <h3>🔧 Conversion Tools</h3>
+                    <div class="tool-recommendation">
+                        <span class="tool-name">PDF Converter Pro</span>
+                        <span class="tool-rating">⭐ 4.8</span>
+                    </div>
+                    <div class="tool-recommendation">
+                        <span class="tool-name">Image Optimizer</span>
+                        <span class="tool-rating">⭐ 4.6</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="premium-section">
+            <div class="premium-card">
+                <h3>🌟 Upgrade to Premium</h3>
+                <p>Unlock unlimited file processing, advanced screenshot detection, and custom naming templates</p>
+                <div class="premium-features">
+                    <div class="feature">✓ Unlimited files per session</div>
+                    <div class="feature">✓ Advanced screenshot detection</div>
+                    <div class="feature">✓ Custom naming templates</div>
+                    <div class="feature">✓ Organization history</div>
+                </div>
+                <button class="premium-upgrade-btn">Upgrade for $10.99</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
