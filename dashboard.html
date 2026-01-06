@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - FileFlow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>🌿 FileFlow</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="dashboard.html" class="active">Dashboard</a>
+                <a href="settings.html">Settings</a>
+                <a href="#premium" class="premium-btn">Go Premium</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="dashboard-header">
+            <h1>📊 Dashboard</h1>
+            <p>Track your file organization activity and insights</p>
+        </div>
+
+        <!-- Quick Stats -->
+        <section class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">📁</div>
+                    <div class="stat-info">
+                        <h3>247</h3>
+                        <p>Files Organized</p>
+                        <span class="stat-change positive">+23 this week</span>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">🗂️</div>
+                    <div class="stat-info">
+                        <h3>18</h3>
+                        <p>Folders Created</p>
+                        <span class="stat-change positive">+5 this week</span>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">💾</div>
+                    <div class="stat-info">
+                        <h3>2.4 GB</h3>
+                        <p>Storage Organized</p>
+                        <span class="stat-change neutral">+340 MB today</span>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">⏱️</div>
+                    <div class="stat-info">
+                        <h3>4.2 hrs</h3>
+                        <p>Time Saved</p>
+                        <span class="stat-change positive">+45 min this week</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Activity & File Breakdown -->
+        <div class="dashboard-grid">
+            <!-- Recent Activity -->
+            <section class="dashboard-card recent-activity">
+                <h2>🕒 Recent Activity</h2>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="activity-icon">📸</div>
+                        <div class="activity-details">
+                            <h4>Screenshots organized</h4>
+                            <p>15 files moved to "Jan15_Screenshots"</p>
+                            <span class="activity-time">2 hours ago</span>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-item">
+                        <div class="activity-icon">📄</div>
+                        <div class="activity-details">
+                            <h4>Documents sorted</h4>
+                            <p>8 PDFs moved to "Jan15_Documents"</p>
+                            <span class="activity-time">5 hours ago</span>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-item">
+                        <div class="activity-icon">🖼️</div>
+                        <div class="activity-details">
+                            <h4>Images categorized</h4>
+                            <p>12 photos moved to "Jan14_Images"</p>
+                            <span class="activity-time">Yesterday</span>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-item">
+                        <div class="activity-icon">🎵</div>
+                        <div class="activity-details">
+                            <h4>Media files organized</h4>
+                            <p>6 audio files moved to "Jan14_Media"</p>
+                            <span class="activity-time">Yesterday</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="view-all-btn">View All Activity</button>
+            </section>
+
+            <!-- File Type Breakdown -->
+            <section class="dashboard-card file-breakdown">
+                <h2>📈 File Type Analysis</h2>
+                <div class="breakdown-chart">
+                    <div class="chart-item">
+                        <div class="chart-bar">
+                            <div class="bar-fill screenshots" style="width: 45%;"></div>
+                        </div>
+                        <div class="chart-info">
+                            <span class="file-type">📸 Screenshots</span>
+                            <span class="file-count">112 files (45%)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="chart-item">
+                        <div class="chart-bar">
+                            <div class="bar-fill documents" style="width: 28%;"></div>
+                        </div>
+                        <div class="chart-info">
+                            <span class="file-type">📄 Documents</span>
+                            <span class="file-count">69 files (28%)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="chart-item">
+                        <div class="chart-bar">
+                            <div class="bar-fill images" style="width: 18%;"></div>
+                        </div>
+                        <div class="chart-info">
+                            <span class="file-type">🖼️ Images</span>
+                            <span class="file-count">44 files (18%)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="chart-item">
+                        <div class="chart-bar">
+                            <div class="bar-fill media" style="width: 9%;"></div>
+                        </div>
+                        <div class="chart-info">
+                            <span class="file-type">🎵 Media</span>
+                            <span class="file-count">22 files (9%)</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Organization History -->
+            <section class="dashboard-card organization-history">
+                <h2>📚 Organization History</h2>
+                <div class="history-list">
+                    <div class="history-item">
+                        <div class="history-date">
+                            <span class="date-day">15</span>
+                            <span class="date-month">Jan</span>
+                        </div>
+                        <div class="history-details">
+                            <h4>Morning Organization Session</h4>
+                            <p>23 files organized into 4 folders</p>
+                            <div class="history-folders">
+                                <span class="folder-tag">Screenshots</span>
+                                <span class="folder-tag">Documents</span>
+                                <span class="folder-tag">Images</span>
+                            </div>
+                        </div>
+                        <div class="history-actions">
+                            <button class="action-btn">↩️</button>
+                            <button class="action-btn">📁</button>
+                        </div>
+                    </div>
+                    
+                    <div class="history-item">
+                        <div class="history-date">
+                            <span class="date-day">14</span>
+                            <span class="date-month">Jan</span>
+                        </div>
+                        <div class="history-details">
+                            <h4>Evening Cleanup</h4>
+                            <p>18 files organized into 3 folders</p>
+                            <div class="history-folders">
+                                <span class="folder-tag">Documents</span>
+                                <span class="folder-tag">Media</span>
+                            </div>
+                        </div>
+                        <div class="history-actions">
+                            <button class="action-btn">↩️</button>
+                            <button class="action-btn">📁</button>
+                        </div>
+                    </div>
+                    
+                    <div class="history-item premium-locked">
+                        <div class="history-date">
+                            <span class="date-day">13</span>
+                            <span class="date-month">Jan</span>
+                        </div>
+                        <div class="history-details">
+                            <h4>Bulk Organization 💎</h4>
+                            <p>Premium feature - View full history</p>
+                        </div>
+                        <span class="premium-badge">Premium</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Smart Insights -->
+            <section class="dashboard-card smart-insights">
+                <h2>🧠 Smart Insights</h2>
+                <div class="insights-list">
+                    <div class="insight-item">
+                        <div class="insight-icon">💡</div>
+                        <div class="insight-content">
+                            <h4>Peak Organization Time</h4>
+                            <p>You're most productive organizing files between 9-11 AM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="insight-item">
+                        <div class="insight-icon">📊</div>
+                        <div class="insight-content">
+                            <h4>Screenshot Overload</h4>
+                            <p>45% of your files are screenshots. Consider cleaning up old ones.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="insight-item">
+                        <div class="insight-icon">🎯</div>
+                        <div class="insight-content">
+                            <h4>Efficiency Improvement</h4>
+                            <p>You've saved 4.2 hours this month with automated organization!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="insight-item premium-locked">
+                        <div class="insight-icon">🔮</div>
+                        <div class="insight-content">
+                            <h4>Predictive Suggestions 💎</h4>
+                            <p>AI-powered organization recommendations</p>
+                        </div>
+                        <span class="premium-badge">Premium</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Actions -->
+            <section class="dashboard-card quick-actions">
+                <h2>⚡ Quick Actions</h2>
+                <div class="actions-grid">
+                    <button class="quick-action-btn">
+                        <div class="action-icon">📁</div>
+                        <span>Organize New Files</span>
+                    </button>
+                    
+                    <button class="quick-action-btn">
+                        <div class="action-icon">🔍</div>
+                        <span>Find Duplicates</span>
+                    </button>
+                    
+                    <button class="quick-action-btn">
+                        <div class="action-icon">📸</div>
+                        <span>Clean Screenshots</span>
+                    </button>
+                    
+                    <button class="quick-action-btn">
+                        <div class="action-icon">📊</div>
+                        <span>Generate Report</span>
+                    </button>
+                    
+                    <button class="quick-action-btn premium-locked">
+                        <div class="action-icon">🤖</div>
+                        <span>AI Organize 💎</span>
+                    </button>
+                    
+                    <button class="quick-action-btn premium-locked">
+                        <div class="action-icon">📈</div>
+                        <span>Advanced Analytics 💎</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Usage & Limits -->
+            <section class="dashboard-card usage-limits">
+                <h2>📋 Usage & Limits</h2>
+                <div class="usage-overview">
+                    <div class="usage-item">
+                        <div class="usage-header">
+                            <span class="usage-label">Daily Processing</span>
+                            <span class="usage-value">8/20 files</span>
+                        </div>
+                        <div class="usage-bar">
+                            <div class="usage-fill" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="usage-item">
+                        <div class="usage-header">
+                            <span class="usage-label">Storage Analyzed</span>
+                            <span class="usage-value">2.4/5.0 GB</span>
+                        </div>
+                        <div class="usage-bar">
+                            <div class="usage-fill" style="width: 48%;"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="usage-item">
+                        <div class="usage-header">
+                            <span class="usage-label">Organization Sessions</span>
+                            <span class="usage-value">12/50 this month</span>
+                        </div>
+                        <div class="usage-bar">
+                            <div class="usage-fill" style="width: 24%;"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="upgrade-prompt-small">
+                    <p>Need more? <a href="#premium" class="upgrade-link">Upgrade to Premium</a> for unlimited processing!</p>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

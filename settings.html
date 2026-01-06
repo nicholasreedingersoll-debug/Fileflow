@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - FileFlow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>🌿 FileFlow</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html">Dashboard</a>
+                <a href="settings.html" class="active">Settings</a>
+                <a href="#premium" class="premium-btn">Go Premium</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="settings-header">
+            <h1>⚙️ Settings</h1>
+            <p>Customize your file organization preferences</p>
+        </div>
+
+        <div class="settings-grid">
+            <!-- Naming Templates Section -->
+            <section class="settings-card">
+                <h2>📝 Naming Templates</h2>
+                <p class="section-description">Choose how your organized folders will be named</p>
+                
+                <div class="template-options">
+                    <div class="template-option active">
+                        <input type="radio" name="template" id="template1" checked>
+                        <label for="template1">
+                            <div class="template-preview">
+                                <span class="template-format">MonthDay_FileType</span>
+                                <span class="template-example">Example: Jan15_Screenshots</span>
+                            </div>
+                        </label>
+                    </div>
+                    
+                    <div class="template-option">
+                        <input type="radio" name="template" id="template2">
+                        <label for="template2">
+                            <div class="template-preview">
+                                <span class="template-format">YYYY-MM-DD_FileType</span>
+                                <span class="template-example">Example: 2024-01-15_Screenshots</span>
+                            </div>
+                        </label>
+                    </div>
+                    
+                    <div class="template-option">
+                        <input type="radio" name="template" id="template3">
+                        <label for="template3">
+                            <div class="template-preview">
+                                <span class="template-format">FileType_MonthDay</span>
+                                <span class="template-example">Example: Screenshots_Jan15</span>
+                            </div>
+                        </label>
+                    </div>
+                    
+                    <div class="template-option premium-locked">
+                        <input type="radio" name="template" id="template4" disabled>
+                        <label for="template4">
+                            <div class="template-preview">
+                                <span class="template-format">Custom Template 💎</span>
+                                <span class="template-example">Create your own format</span>
+                            </div>
+                            <span class="premium-badge">Premium</span>
+                        </label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- File Detection Settings -->
+            <section class="settings-card">
+                <h2>🔍 File Detection</h2>
+                <p class="section-description">Configure how FileFlow identifies and categorizes your files</p>
+                
+                <div class="detection-settings">
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Screenshot Detection</h3>
+                            <p>Automatically identify and separate screenshot files</p>
+                        </div>
+                        <div class="toggle-switch">
+                            <input type="checkbox" id="screenshot-detection" checked>
+                            <label for="screenshot-detection"></label>
+                        </div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Smart Document Recognition</h3>
+                            <p>Detect PDFs, Word docs, and other important documents</p>
+                        </div>
+                        <div class="toggle-switch">
+                            <input type="checkbox" id="document-detection" checked>
+                            <label for="document-detection"></label>
+                        </div>
+                    </div>
+                    
+                    <div class="setting-item premium-locked">
+                        <div class="setting-info">
+                            <h3>Advanced Pattern Recognition 💎</h3>
+                            <p>AI-powered file categorization based on content and context</p>
+                        </div>
+                        <div class="toggle-switch disabled">
+                            <input type="checkbox" id="advanced-detection" disabled>
+                            <label for="advanced-detection"></label>
+                        </div>
+                        <span class="premium-badge">Premium</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Organization Preferences -->
+            <section class="settings-card">
+                <h2>🗂️ Organization Preferences</h2>
+                <p class="section-description">Set your default organization behavior</p>
+                
+                <div class="organization-settings">
+                    <div class="setting-group">
+                        <h3>Default Grouping Method</h3>
+                        <select class="custom-select">
+                            <option value="date-type">By Date + File Type</option>
+                            <option value="type-date">By File Type + Date</option>
+                            <option value="date-only">By Date Only</option>
+                            <option value="type-only">By File Type Only</option>
+                        </select>
+                    </div>
+                    
+                    <div class="setting-group">
+                        <h3>File Size Threshold</h3>
+                        <p class="setting-description">Skip organizing files smaller than:</p>
+                        <div class="size-options">
+                            <label class="size-option">
+                                <input type="radio" name="size-threshold" value="100kb" checked>
+                                <span>100 KB</span>
+                            </label>
+                            <label class="size-option">
+                                <input type="radio" name="size-threshold" value="500kb">
+                                <span>500 KB</span>
+                            </label>
+                            <label class="size-option">
+                                <input type="radio" name="size-threshold" value="1mb">
+                                <span>1 MB</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Account & Limits -->
+            <section class="settings-card">
+                <h2>👤 Account & Limits</h2>
+                <p class="section-description">Your current plan and usage information</p>
+                
+                <div class="account-info">
+                    <div class="plan-status">
+                        <div class="plan-badge free">Free Plan</div>
+                        <div class="usage-stats">
+                            <div class="usage-item">
+                                <span class="usage-label">Files processed today:</span>
+                                <span class="usage-value">8/20</span>
+                            </div>
+                            <div class="usage-item">
+                                <span class="usage-label">Session limit:</span>
+                                <span class="usage-value">20 files</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="upgrade-prompt">
+                        <h3>🌟 Unlock More Features</h3>
+                        <ul class="premium-benefits">
+                            <li>✓ Unlimited file processing</li>
+                            <li>✓ Advanced AI detection</li>
+                            <li>✓ Custom naming templates</li>
+                            <li>✓ Organization history</li>
+                            <li>✓ Bulk operations</li>
+                        </ul>
+                        <button class="upgrade-btn">Upgrade to Premium - $10.99</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Data & Privacy -->
+            <section class="settings-card">
+                <h2>🔒 Data & Privacy</h2>
+                <p class="section-description">Control how your data is handled</p>
+                
+                <div class="privacy-settings">
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Auto-delete processed files</h3>
+                            <p>Remove original files after 24 hours</p>
+                        </div>
+                        <div class="toggle-switch">
+                            <input type="checkbox" id="auto-delete">
+                            <label for="auto-delete"></label>
+                        </div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Usage analytics</h3>
+                            <p>Help improve FileFlow by sharing anonymous usage data</p>
+                        </div>
+                        <div class="toggle-switch">
+                            <input type="checkbox" id="analytics" checked>
+                            <label for="analytics"></label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="data-actions">
+                    <button class="secondary-btn">Export My Data</button>
+                    <button class="danger-btn">Delete All Data</button>
+                </div>
+            </section>
+        </div>
+
+        <!-- Save Settings Button -->
+        <div class="settings-footer">
+            <button class="save-settings-btn">💾 Save All Settings</button>
+        </div>
+    </main>
+</body>
+</html>
